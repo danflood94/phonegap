@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <title>Home Page</title>
+    <script type="text/javascript">
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+    if (localStorage.login == "true" && filename == 'login.html') {
+        window.location.href = "index.html";
+    } else if (localStorage.login == null) {
+        window.location.href = "login.html";
+    } else if (localStorage.login == "false" && filename != 'login.html') {
+        window.location.href = "login.html";
+    }
+    </script>
+</head>
+
+<body>
+    <div class="bar bar-header">
+        <h1 class="title">My Profile</h1>
+        <a href="#" class="button button-clear" id="logout">Logout</a>
+    </div>
+    <div style="height:200px;background:#5E5E5E;text-align:center;margin-top:44px;padding:20px;">
+        <img src="" id="profilepic" style="padding:5px;border:1px solid #ADABAB;border-radius:50px;height:75px;width:75px;" />
+        <h5 id="name" style="color:#fff;"></h5>
+    </div>
+    <ul class="list list-inset">
+        <li class="item" style="color:#D26F6F;">Email
+            <p class="item-note" id="email1"></p>
+        </li>
+        <a href="change-password.html" class="item item-icon-right">Change Password <i class="icon ion-ios-arrow-right"></i></a>
+    </ul>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+</body>
+
+</html>

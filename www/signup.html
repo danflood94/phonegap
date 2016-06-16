@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+    <title>Create an Account</title>
+</head>
+<body>
+    <div class="bar bar-header">
+        <h1 class="title">Create an Account</h1>
+        <a href="login.html" class="button button-clear button-royal">Login</a>
+    </div>
+    <div class="padding" style="margin-top:75px;">
+        <label class="item-input">
+            <span class="input-label">Full Name</span>
+            <input type="text" placeholder="Sundaravel" id="fullname">
+        </label>
+        <label class="item-input">
+            <span class="input-label">Email</span>
+            <input type="email" placeholder="email@domain.com" id="email">
+        </label>
+        <label class="item-input">
+            <span class="input-label">Password</span>
+            <input type="password" placeholder="password" id="password">
+        </label>
+        <label class="item-input">
+            <button class="button button-block button-positive" id="signup">Create an Account</button>
+        </label>
+        
+        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+</body>
+
+</html>
