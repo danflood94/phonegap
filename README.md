@@ -1,3 +1,7 @@
+# DISCONTINUED
+
+This code was purposefully incomplete and will not be updated. Additionally Adobe Phonegap has been discontinued.
+
 # phonegap
 phonegap login using ajax,mysql and php
 
